@@ -35,7 +35,7 @@ static	size_t	count_word_len(char const *s, char c)
 	return (len);
 }
 
-char			**ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
 	size_t		i;
 	size_t		j;
@@ -44,7 +44,8 @@ char			**ft_split(char const *s, char c)
 
 	i = 0;
 	amount_words = count_words(s, c);
-	if (!(result = (char **)malloc(sizeof(char *) * (amount_words + 1))))
+	result = (char **)malloc(sizeof(char *) * (amount_words + 1));
+	if (result == NULL)
 		return (NULL);
 	result[amount_words] = NULL;
 	while (i < amount_words)

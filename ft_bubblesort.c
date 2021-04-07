@@ -1,7 +1,7 @@
 #include <string.h>
 #include <stdio.h>
 
-void		swap(int *x, int *y)
+void	swap(int *x, int *y)
 {
 	int	tmp;
 
@@ -10,7 +10,7 @@ void		swap(int *x, int *y)
 	*y = tmp;
 }
 
-void		bubble_sort(int array[], int array_size)
+void	bubble_sort(int array[], int array_size)
 {
 	int	i;
 	int	j;
@@ -22,23 +22,9 @@ void		bubble_sort(int array[], int array_size)
 		i++;
 		while (j >= i + 1)
 		{
-			if(array[j] < array[j - 1])
-				swap(&array[j], &array[j-1]);
+			if (array[j] < array[j - 1])
+				swap(&array[j], &array[j - 1]);
 			j--;
 		}
-
 	}
-}
-
-int main()
-{
-	int i = 0;
-	int array[] = {1, 4, 2, 3};
-	bubble_sort(array, 4);
-	while (i < 4)
-	{
-		printf("%d\n", array[i]);
-		i++;
-	}
-
 }

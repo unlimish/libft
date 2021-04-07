@@ -29,7 +29,7 @@ size_t front_len)
 	return (len);
 }
 
-char			*ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*result;
 	size_t	front_set_len;
@@ -43,7 +43,8 @@ char			*ft_strtrim(char const *s1, char const *set)
 	if (front_set_len == back_set_len)
 		return (ft_strdup(""));
 	result_len = back_set_len - front_set_len + 1;
-	if (!(result = malloc(result_len)))
+	result = malloc(result_len);
+	if (result == NULL)
 		return (NULL);
 	ft_strlcpy(result, (char *)s1 + front_set_len, result_len);
 	return (result);

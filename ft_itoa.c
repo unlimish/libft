@@ -31,7 +31,7 @@ static	char	*ft_strcpy(char *dest, char *src)
 	return (dest);
 }
 
-char			*ft_itoa(int n)
+char	*ft_itoa(int n)
 {
 	size_t	len;
 	char	*result;

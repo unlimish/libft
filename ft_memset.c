@@ -2,8 +2,8 @@
 
 void	*ft_memset(void *buf, int c, size_t n)
 {
-	unsigned char *addr;
-	unsigned char ch;
+	unsigned char	*addr;
+	unsigned char	ch;
 
 	addr = (unsigned char *)buf;
 	ch = (unsigned char)c;

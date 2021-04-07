@@ -8,8 +8,8 @@ void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 
 	if (dest == NULL && src == NULL)
 		return (NULL);
-	s1 = (unsigned char*)dest;
-	s2 = (unsigned char*)src;
+	s1 = (unsigned char *)dest;
+	s2 = (unsigned char *)src;
 	i = 0;
 	while (i < n)
 	{

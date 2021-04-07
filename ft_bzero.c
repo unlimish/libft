@@ -2,7 +2,7 @@
 
 void	ft_bzero(void *s, size_t size)
 {
-	unsigned char *addr;
+	unsigned char	*addr;
 
 	addr = (unsigned char *)s;
 	while (size != 0)
