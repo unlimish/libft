@@ -21,6 +21,7 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n);
 
 int		ft_atoi(const char *nptr);
 char	*ft_itoa(int n);
+char	*ft_utoa(unsigned int n);
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
