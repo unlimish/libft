@@ -1,0 +1,22 @@
+name: NormCI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  norm:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout git repository
+        uses: actions/checkout@v2
+      - name: Install Norminette
+        run: |
+          python3 -m pip install --upgrade pip setuptools
+          python3 -m pip install norminette
+      - name: Run Norminette
+        run: norminette
