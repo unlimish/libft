@@ -56,6 +56,9 @@ typedef struct s_dlist
 t_dlist	*ft_malloc_list(void);
 int		ft_check_list(t_dlist *list);
 t_dlist	*ft_go_last_list(t_dlist *list);
+t_dlist	*ft_add_list(t_dlist *list, int value);
+void	ft_del_all_list(t_dlist *list);
+void	ft_put_list(t_dlist *list);
 
 
 #endif
