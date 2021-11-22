@@ -46,4 +46,19 @@ void	ft_putnbr_fd(int n, int fd);
 
 int		ft_isspace(char c);
 
+typedef struct s_dlist
+{
+	int				value;
+	struct s_dlist	*next;
+	struct s_dlist	*prev;
+}				t_blist;
+
+t_blist		*ft_malloc_list(void);
+int			ft_check_list(t_blist *list);
+t_blist		*ft_go_last_list(t_blist *list);
+void		ft_add_list(t_blist *list, int value);
+void		ft_del_all_list(t_blist *list);
+void		ft_put_list(t_blist *list);
+
+
 #endif
