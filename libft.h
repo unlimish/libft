@@ -60,5 +60,4 @@ t_dlist	*ft_add_list(t_dlist *list, int value);
 void	ft_del_all_list(t_dlist *list);
 void	ft_put_list(t_dlist *list);
 
-
 #endif
