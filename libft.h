@@ -51,14 +51,11 @@ typedef struct s_dlist
 	int				value;
 	struct s_dlist	*next;
 	struct s_dlist	*prev;
-}				t_blist;
+}				t_dlist;
 
-t_blist	*ft_malloc_list(void);
-int		ft_check_list(t_blist *list);
-t_blist	*ft_go_last_list(t_blist *list);
-void	ft_add_list(t_blist *list, int value);
-void	ft_del_all_list(t_blist *list);
-void	ft_put_list(t_blist *list);
+t_dlist	*ft_malloc_list(void);
+int		ft_check_list(t_dlist *list);
+t_dlist	*ft_go_last_list(t_dlist *list);
 
 
 #endif

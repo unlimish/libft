@@ -1,10 +1,10 @@
 #include "libft.h"
 
-void	ft_add_list(t_blist *list, int value)
+t_dlist	*ft_add_list(t_dlist *list, int value)
 {
 	int		is_list_exist;
-	t_blist	*last_element;
-	t_blist	*new_element;
+	t_dlist	*last_element;
+	t_dlist	*new_element;
 
 	last_element = NULL;
 	new_element = NULL;

@@ -1,6 +1,6 @@
 #include "libft.h"
 
-t_blist	*ft_go_last_list(t_blist *list)
+t_dlist	*ft_go_last_list(t_dlist *list)
 {
 	while (list->next != NULL)
 		list = list->next;
