@@ -6,6 +6,6 @@ t_dlist	*ft_malloc_list(void)
 
 	list = (t_dlist *)malloc(sizeof(t_dlist));
 	if (list == NULL)
-		exit(ERR);
+		exit(-1);
 	return (list);
 }
