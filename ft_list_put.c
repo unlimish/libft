@@ -1,6 +1,6 @@
 #include "libft.h"
 
-void	ft_put_list(t_dlist *list)
+void	ft_list_put(t_dlist *list)
 {
 	while (list != NULL)
 	{

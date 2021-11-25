@@ -1,6 +1,6 @@
 #include "libft.h"
 
-int	ft_check_list(t_dlist *list)
+int	ft_list_check(t_dlist *list)
 {
 	if (list == NULL)
 		return (-1);

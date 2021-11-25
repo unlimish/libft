@@ -54,10 +54,10 @@ typedef struct s_dlist
 }				t_dlist;
 
 t_dlist	*ft_malloc_list(void);
-int		ft_check_list(t_dlist *list);
-t_dlist	*ft_go_last_list(t_dlist *list);
-t_dlist	*ft_add_list(t_dlist *list, int value);
-void	ft_del_all_list(t_dlist *list);
-void	ft_put_list(t_dlist *list);
+int		ft_list_check(t_dlist *list);
+t_dlist	*ft_list_go_last(t_dlist *list);
+t_dlist	*ft_list_add(t_dlist *list, int value);
+void	ft_list_del_all(t_dlist *list);
+void	ft_list_put(t_dlist *list);
 
 #endif
