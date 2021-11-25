@@ -53,7 +53,7 @@ typedef struct s_dlist
 	struct s_dlist	*prev;
 }				t_dlist;
 
-t_dlist	*ft_malloc_list(void);
+t_dlist	*ft_list_malloc(void);
 int		ft_list_check(t_dlist *list);
 t_dlist	*ft_list_go_last(t_dlist *list);
 t_dlist	*ft_list_add(t_dlist *list, int value);

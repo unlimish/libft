@@ -11,7 +11,7 @@ t_dlist	*ft_list_add(t_dlist *list, int value)
 	is_list_exist = ft_list_check(list);
 	if (is_list_exist == -1)
 	{
-		list = ft_malloc_list();
+		list = ft_list_malloc();
 		list->value = value;
 		list->next = NULL;
 		list->prev = NULL;
@@ -20,7 +20,7 @@ t_dlist	*ft_list_add(t_dlist *list, int value)
 	else
 	{
 		last_element = ft_list_go_last(list);
-		new_element = ft_malloc_list();
+		new_element = ft_list_malloc();
 		new_element->value = value;
 		new_element->prev = last_element;
 		new_element->next = NULL;
