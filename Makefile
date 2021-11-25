@@ -36,12 +36,12 @@ SRCS =	ft_strlen.c \
 		ft_putstr_fd.c \
 		ft_putendl_fd.c \
 		ft_putnbr_fd.c \
-		ft_malloc_list.c \
-		ft_check_list.c \
-		ft_go_last_list.c \
-		ft_add_list.c\
-		ft_del_all_list.c \
-		ft_put_list.c
+		ft_list_malloc.c \
+		ft_list_check.c \
+		ft_list_go_last.c \
+		ft_list_add.c\
+		ft_list_del_all.c \
+		ft_list_put.c
 
 B_SRCS=	ft_lstnew.c \
 		ft_lstadd_front.c \

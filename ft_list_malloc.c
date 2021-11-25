@@ -1,6 +1,6 @@
 #include "libft.h"
 
-t_dlist	*ft_malloc_list(void)
+t_dlist	*ft_list_malloc(void)
 {
 	t_dlist	*list;
 
