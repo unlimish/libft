@@ -2,6 +2,7 @@
 # define LIBFT_H
 # include <stdlib.h>
 # include <unistd.h>
+# include <stdbool.h>
 
 void	*ft_memset(void *buf, int c, size_t n);
 void	ft_bzero(void *s, size_t size);
@@ -48,6 +49,7 @@ int		ft_isspace(char c);
 
 typedef struct s_dlist
 {
+	bool			is_head;
 	int				value;
 	struct s_dlist	*next;
 	struct s_dlist	*prev;
